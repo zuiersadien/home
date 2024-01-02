@@ -9,9 +9,5 @@ export class AppController {
   getHello(): string {
     return 'hola Mundo';
   }
-  @Get('products/:productId')
-  newEndpoint(@Param() params:any ){
-    return ` product ${params.productId}`
-  }
 
 }
